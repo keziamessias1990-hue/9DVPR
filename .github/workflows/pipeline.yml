@@ -40,6 +40,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    needs: unit-test
 
     steps:
       - uses: actions/checkout@v3
@@ -71,6 +72,17 @@ jobs:
   deploy-STG:
     runs-on: ubuntu-latest
     needs: build
+
+  Smoketest:
+      runs-on: ubuntu-latest
+      needs: deploy-STG
+      if: github.ref == 'refs/heads/develop'
+      steps:
+        - uses: actions/checkout@v3
+        - name: Deploy
+          shell: bash
+          run: |
+            sh 'src/main/scripts/smoketest.sh'
 
     steps:
       - name: Deploy
