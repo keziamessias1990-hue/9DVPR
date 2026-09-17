@@ -16,10 +16,10 @@
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 
-	<properties>
-		<java.version>21</java.version>
-		<sonar.organization>devopsmbalearning</sonar.organization>
-  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	properties>
+    <java.version>21</java.version>
+    <sonar.organization>keziamessias1990-hue</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
 	<dependencies>
