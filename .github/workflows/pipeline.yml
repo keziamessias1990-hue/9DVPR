@@ -238,7 +238,7 @@ jobs:
 
     environment:
       name: AZURE-PRO
-      url: devopsresource-drahajh8dsddasec.mexicocentral-01.azurewebsites.net
+      url: https://devopsresource-drahajh8dsddasec.mexicocentral-01.azurewebsites.net
 
     steps:
       - name: Download JAR
