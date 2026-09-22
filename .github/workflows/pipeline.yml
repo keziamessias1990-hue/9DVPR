@@ -238,7 +238,7 @@ jobs:
 
     environment:
       name: AZURE-PRO
-      url: https://devopsfiap-on-app.azurewebsites.net/
+      url: devopsresource-drahajh8dsddasec.mexicocentral-01.azurewebsites.net
 
     steps:
       - name: Download JAR
